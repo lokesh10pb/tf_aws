@@ -7,12 +7,9 @@ terraform {
   }
 }
 
-
-
 provider "aws" {
 region = var.region
 }
-
 
 resource "aws_instance" "my_server" {
     ami = var.ami_id
@@ -20,7 +17,7 @@ resource "aws_instance" "my_server" {
   tags = {
     Name = "SampleServer"
   }
-  
+
   root_block_device {
      volume_size = 10
     volume_type = "gp3"

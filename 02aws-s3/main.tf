@@ -30,6 +30,7 @@ source = "./myfile.txt"
 key    = "myfile.txt"
 }
 
+
 #create ramdon name for s3 in the end
 resource "random_id" "rand_id" {
     byte_length = 8
