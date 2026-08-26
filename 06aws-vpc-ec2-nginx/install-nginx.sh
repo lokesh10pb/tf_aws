@@ -1,9 +1,11 @@
 #!/bin/bash
 
-apt-get update -y
-apt-get install -y nginx
+# apt-get update -y
+# apt-get install -y nginx
 
-systemctl enable nginx
-systemctl start nginx
+# systemctl enable nginx
+# systemctl start nginx
 
-echo "Nginx installation completed"
+# echo "Nginx installation completed"
+
+#Node Run any script here
