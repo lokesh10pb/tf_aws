@@ -70,3 +70,20 @@ resource "aws_route_table_association" "public_route_association" {
   subnet_id      = aws_subnet.public_subnet.id
   route_table_id = aws_route_table.public_rt.id
 }
+
+
+
+#creating ec2 
+resource "aws_instance" "my_server" {
+    ami = var.ami_id
+    instance_type = var.ec2_type
+    subnet_id = aws_subnet.public_subnet.id
+  tags = {
+    Name = "SampleServer"
+  }
+
+  root_block_device {
+     volume_size = 10
+    volume_type = "gp3"
+  }
+}
