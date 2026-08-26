@@ -1,11 +1,3 @@
-terraform {
-  required_providers {
-    aws = {
-      source  = "hashicorp/aws"
-      version = "6.61.0"
-    }
-  }
-}
 
 
 resource "aws_vpc" "my-vpc" {
@@ -109,19 +101,19 @@ resource "aws_route_table" "private-route" {
 
 #Route Assocation with public  subnets 
 resource "aws_route_table_association" "public_subnet_1a" {
-    subnet_id = aws_subnet.public_subnet-1a.id
-    route_table_id = aws_route_table.my-public-route.id
-  
+  subnet_id      = aws_subnet.public_subnet-1a.id
+  route_table_id = aws_route_table.my-public-route.id
+
 }
 resource "aws_route_table_association" "public_subnet_1b" {
-    subnet_id = aws_subnet.public_subnet-1b.id
-    route_table_id = aws_route_table.my-public-route.id
-  
+  subnet_id      = aws_subnet.public_subnet-1b.id
+  route_table_id = aws_route_table.my-public-route.id
+
 }
 resource "aws_route_table_association" "public_subnet_1c" {
-    subnet_id = aws_subnet.public_subnet-1c.id
-    route_table_id = aws_route_table.my-public-route.id
-  
+  subnet_id      = aws_subnet.public_subnet-1c.id
+  route_table_id = aws_route_table.my-public-route.id
+
 }
 #Route Assocation with public  subnets 
 # Route Association with private subnets
