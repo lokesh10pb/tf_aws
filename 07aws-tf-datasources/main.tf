@@ -1,0 +1,16 @@
+
+terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "6.61.0"
+    }
+  }
+}
+
+
+provider "aws" {
+region = "us-esat-1"
+}
+
+

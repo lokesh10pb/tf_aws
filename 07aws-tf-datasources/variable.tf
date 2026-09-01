@@ -18,6 +18,3 @@ variable "ec2_type" {
     default = "t3.nano"
   
 }
-
-
-
