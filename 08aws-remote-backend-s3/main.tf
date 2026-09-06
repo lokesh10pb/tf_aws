@@ -15,7 +15,4 @@ resource "aws_instance" "my_server" {
 
 
 
-#create bucket
-resource "aws_s3_bucket" "s3_bucket" {
-  bucket = "config-31d3-tf-state"
-}
+it 
