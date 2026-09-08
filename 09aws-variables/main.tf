@@ -13,8 +13,6 @@ locals {
   Name = "Sever"
 }
 
-
-
 provider "aws" {
   region = "us-east-1"
 }
